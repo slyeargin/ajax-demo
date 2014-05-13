@@ -21,7 +21,11 @@ exports.draw = (req, res)=>{
         var st = sts[suitdraw];
 
         var card = {suit: cr, rank: st};
-        hand.push(card);
+
+        var uniquecheck = _.find(hand, card);
+        if (!uniquecheck){
+          hand.push(card);
+        }
       }
       res.send(hand);
     });

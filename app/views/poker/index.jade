@@ -1,0 +1,19 @@
+extends ../shared/template
+
+block content
+  h1 Poker
+
+  #input
+    button#draw Draw Your Hand
+
+  .cardstack
+    #card1.card
+    #card2.card
+    #card3.card
+    #card4.card
+    #card5.card
+
+  #hand
+
+block scripts
+  script(src='/js/es6/compiled/poker.js')

@@ -1,0 +1,15 @@
+extends ../shared/template
+
+block content
+  h1 Roll 2 Dice
+
+  #input
+    button#roll Roll 2 Dice
+
+  #result
+    #message
+    img#dice1(src='')
+    img#dice2(src='')
+
+block scripts
+  script(src='/js/es6/compiled/pairdice.js')

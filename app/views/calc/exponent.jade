@@ -1,0 +1,15 @@
+extends ../shared/template
+
+block content
+  h1 Calc : Power
+
+  form#findPower
+    input(type='text', name='num1')
+    span ^
+    input(type='text', name='num2')
+    button#exp Find Power
+
+  #result
+
+block scripts
+  script(src='/js/es6/compiled/power.js')

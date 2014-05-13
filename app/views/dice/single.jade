@@ -1,0 +1,13 @@
+extends ../shared/template
+
+block content
+  h1 Roll Dice
+
+  #input
+    button#roll Roll
+
+  #result
+    img#dice(src='')
+
+block scripts
+  script(src='/js/es6/compiled/singledice.js')

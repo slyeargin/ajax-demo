@@ -9,7 +9,8 @@
       url: '/cards',
       type: 'POST',
       success: (function(response) {
-        $('#card').attr('src', '/img/dice_' + response.side + '.png');
+        $('.card').removeClass().addClass('card ' + response.rank.class + ' ' + response.suit.class);
+        $('.card').empty().prepend(response.rank.name + '<br/>' + response.suit.name);
       })
     });
     e.preventDefault();
